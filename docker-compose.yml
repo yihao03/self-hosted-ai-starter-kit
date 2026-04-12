@@ -74,7 +74,8 @@ services:
     command:
     - "-c"
     - |
-      if [ -z "$(n8n list:workflow --onlyId)" ]; then
+      WORKFLOW_COUNT="$$(n8n list:workflow --onlyId 2>/dev/null | grep -E '^[A-Za-z0-9]{8,}$' | wc -l | tr -d ' ')"
+      if [ "$$WORKFLOW_COUNT" = "0" ]; then
         n8n import:credentials --separate --input=/demo-data/credentials && \
         n8n import:workflow --separate --input=/demo-data/workflows
       else
