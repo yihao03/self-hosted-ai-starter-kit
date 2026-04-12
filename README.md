@@ -15,6 +15,17 @@ give responses that would damage the company's reputation or financially harm th
 ├── LICENSE
 ├── README.md
 ├── docker-compose.yml
+├── assets
+├── dialogues
+│   ├── 1_convert_to_pandas.py
+│   ├── 2_append_emotions.py
+│   ├── 3_generate_metrics.py
+│   ├── abuse
+│   ├── csv_files # outputs
+│   ├── inference.py
+│   ├── nonsense # inputs
+│   ├── routine1to6 # inputs
+│   └── total_time.text
 ├── n8n
 │   └── demo-data
 │       ├── credentials
@@ -46,6 +57,9 @@ Engineering world, handles large amounts of data safely.
 ✅ **Docs to test out RAG**  - We’ve included a set of sample documents and
 policies to test out the RAG capabilities of the workflow. We have also included
 a sample scraper that scrapes DBS's website by default.
+
+✅ **Testing scripts**  - In the dialogues folder, you can find scripts for
+testing the workflow, their inputs and outputs.
 
 ## Installation
 
