@@ -1,4 +1,4 @@
-# NST Anti Frustration Agent
+# Anti Frustration Agent
 
 ![workflow](assets/workflow.png)
 
